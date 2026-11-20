@@ -17,7 +17,7 @@ export class BasePage{
     this.page=page;
     this.logo= page.getByAltText('naveenopencart');
     this.searchBox=page.getByPlaceholder('Search');
-    this.searchIcon=page.locator('div#Search button');
+    this.searchIcon=page.locator('div#search button');
     this.currency=page.locator('#form-currency');
     this.footerLinks=page.locator('footer a');
     this.cartButton=page.locator('div#cart button');
