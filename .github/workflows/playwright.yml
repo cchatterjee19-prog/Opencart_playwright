@@ -37,7 +37,7 @@ jobs:
 
       - name: Install Playwright OS deps only (if cached)
         if: steps.playwright-cache.outputs.cache-hit =='true'
-        run: npx playwright install --deps chromium
+        run: npx playwright install-deps chromium
 
       - name: Run Playwright tests
         run: npx playwright test --project=chromium
