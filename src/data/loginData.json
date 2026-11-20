@@ -1,14 +1,14 @@
 [
    {
-    "username": "wrong@open.com",
+    "app_username": "wrong@open.com",
     "password": "wrong@123"
    },
  {
-    "username": "invalid@open.com",
+    "app_username": "invalid@open.com",
     "password": ""
    },
     {
-    "username": "pwbatchtest@open.com",
+    "app_username": "pwbatchtest@open.com",
     "password": "pw123"
    }
 

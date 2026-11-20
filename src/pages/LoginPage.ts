@@ -9,7 +9,7 @@ export class LoginPage extends BasePage{
     private readonly password:Locator;
     private readonly loginButton:Locator;
     private readonly forgetPasswordLink:Locator;
-    private readonly logo:Locator;
+   readonly logo:Locator;
     private readonly loginErrorMsg:Locator;
     
 
@@ -37,9 +37,9 @@ export class LoginPage extends BasePage{
         return await this.forgetPasswordLink.isVisible();
      }
 
-    async doLogin(username:string, password:string):Promise<void> {
-       console.log(`Login with username: ${username} and password: ${password}`);
-       await this.emailId.fill(username);
+    async doLogin(app_username:string, password:string):Promise<void> {
+       console.log(`Login with username: ${app_username} and password: ${password}`);
+       await this.emailId.fill(app_username);
        await this.password.fill(password);
        await this.loginButton.click();
     }
